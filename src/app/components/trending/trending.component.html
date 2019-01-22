@@ -1,0 +1,17 @@
+<nz-layout>
+  <h3>Top Trending</h3>
+  <ngx-slick-carousel
+    class="carousel"
+    #slickModal="slick-carousel"
+    [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let list of lists" class="slide">
+      <nz-card nzHoverable [nzCover]="coverTemplate"  [nzBordered]="false">
+        <nz-card-meta nzTitle="{{list.title}}"></nz-card-meta>
+      </nz-card>
+      <ng-template #coverTemplate>
+        <iframe [src]="list.link | safe" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </ng-template>
+    </div>
+  </ngx-slick-carousel>
+  <nz-divider></nz-divider>
+</nz-layout>

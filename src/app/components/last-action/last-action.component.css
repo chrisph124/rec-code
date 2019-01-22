@@ -1,0 +1,28 @@
+.carousel {
+  --width-card: 200px;
+  --gap: 3px;
+  margin: auto;
+  height: 200px;
+  width: calc((var(--width-card) * 6) + (var(--gap) * 5));
+}
+
+.ant-card {
+  width: 200px;
+  height: 200px;
+}
+
+
+iframe {
+  height: 120px;
+  width: 200px;
+}
+
+[nz-carousel-content] {
+  width: 200px !important;
+  height: 200px;
+  margin-right: 3px;
+}
+
+[nz-carousel-content]:last-child {
+  margin-right: 0;
+}
