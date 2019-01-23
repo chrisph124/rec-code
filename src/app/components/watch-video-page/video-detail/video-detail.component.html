@@ -1,0 +1,35 @@
+<div class="details-container">
+  <h2>{{videoDetail.singer.name}} - {{videoDetail.songName}}</h2>
+  <div class="channel-info" nz-row>
+    <div class="channel-info-left" nz-col nzSpan="6" nz-row>
+      <div nz-col nzSpan="6">
+        <img [src]="videoDetail.channel.imageUrl" alt="">
+      </div>
+      <div nz-col nzSpan="18">
+        <a [href]="videoDetail.channel.url">{{videoDetail.channel.name}}</a>
+        <div nz-row>
+          <button nz-col nzSpan="12" class="btn-subscribe">Subscribe</button>
+          <div class="subscribers" nz-col nzSpan="12">
+            {{videoDetail.channel.subscribers | number}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="channel-info-right" nz-col nzSpan="18">
+      {{videoDetail.views | number}} views
+    </div>
+  </div>
+  <hr>
+  <div class="action-buttons" nz-row>
+    <div class="action-buttons-left" nz-col nzSpan="6">
+      <button nz-button nzType="default">Add to</button>
+      <button nz-button nzType="default">Share</button>
+      <button nz-button nzType="default">More</button>
+    </div>
+    <div class="action-buttons-right" nz-col nzSpan="18">
+      <button nz-button nzType="default">{{videoDetail.likes}}</button>
+      <button nz-button nzType="danger">{{videoDetail.dislikes}}</button>
+
+    </div>
+  </div>
+</div>
