@@ -16,7 +16,7 @@ import { ContentComponent } from './components/content/content.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TrendingComponent, SafePipe } from './components/trending/trending.component';
 import { LastActionComponent } from './components/last-action/last-action.component';
-import { WatchVideoPageModule } from './components/watch-video-page/watch-video-page.module';
+import { VideoDetailsModule } from './components/video-details/video-details.module';
 
 registerLocaleData(en);
 
@@ -38,7 +38,7 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     SlickCarouselModule,
     ReactiveFormsModule,
-    WatchVideoPageModule
+    VideoDetailsModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
