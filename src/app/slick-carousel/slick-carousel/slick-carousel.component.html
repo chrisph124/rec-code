@@ -1,0 +1,19 @@
+<nz-layout *ngFor="let media of mediaJSON">
+  <h3>{{media.tags}}</h3>
+  <ngx-slick-carousel
+    class="carousel"
+    #slickModal="slick-carousel"
+    [config]="slideConfig"
+  >
+    <div ngxSlickItem *ngFor="let video of media.videos" class="slide">
+      <nz-card nzHoverable [nzCover]="coverTemplate"  [nzBordered]="false">
+        <nz-card-meta nzTitle="{{video.title}}"></nz-card-meta>
+      </nz-card>
+      <ng-template #coverTemplate>
+        <video controls>
+          <source src="{{video.sources}}" type="video/mp4">
+        </video>
+      </ng-template>
+    </div>
+  </ngx-slick-carousel>
+</nz-layout>

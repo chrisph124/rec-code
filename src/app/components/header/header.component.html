@@ -1,22 +1,13 @@
 <nz-header>
-  <div nz-row nzType="flex" nzAlign="middle">
-    <div nz-col nzSpan="12">Rec Logo</div>
-    <div nz-col nzSpan="12">
-      <form nz-form [nzLayout]="'inline'" [formGroup]="validateForm" (ngSubmit)="submitForm()" style="text-align: right">
-        <nz-form-item>
-          <nz-form-control>
-            <nz-input-group [nzPrefix]="prefixUser">
-              <input formControlName="userName" nz-input placeholder="Username">
-            </nz-input-group>
-          </nz-form-control>
-        </nz-form-item>
-        <nz-form-item>
-          <nz-form-control>
-            <button nz-button nzType="primary" [disabled]="!validateForm.valid">Log in</button>
-          </nz-form-control>
-        </nz-form-item>
-      </form>
-      <ng-template #prefixUser><i nz-icon type="user"></i></ng-template>
-    </div>
+<div nz-row>
+  <div nz-col nzSpan="2">
+    Rec Logo
   </div>
+  <div nz-col nzSpan="14">
+    <rec-navigation></rec-navigation>
+  </div>
+  <div nz-col nzSpan="8" nzType="flex" nzAlign="middle">
+    <rec-login></rec-login>
+  </div>
+</div>
 </nz-header>

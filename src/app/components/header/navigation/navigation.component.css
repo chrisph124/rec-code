@@ -1,0 +1,18 @@
+.ant-menu-horizontal {
+  border-bottom: none;
+  line-height: inherit;
+}
+
+.ant-menu {
+  background-color: transparent;
+  color: #fff;
+}
+
+.ant-menu-horizontal>.ant-menu-item:hover {
+  border-bottom: none;
+  color: #fff
+}
+
+.ant-menu-horizontal>.ant-menu-item {
+  border-bottom: none;
+}

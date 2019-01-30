@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TrendingComponent } from './trending.component';
+import { SlickCarouselComponent } from './slick-carousel.component';
 
-describe('TrendingComponent', () => {
-  let component: TrendingComponent;
-  let fixture: ComponentFixture<TrendingComponent>;
+describe('SlickCarouselComponent', () => {
+  let component: SlickCarouselComponent;
+  let fixture: ComponentFixture<SlickCarouselComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TrendingComponent ]
+      declarations: [ SlickCarouselComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TrendingComponent);
+    fixture = TestBed.createComponent(SlickCarouselComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
