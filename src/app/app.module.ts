@@ -8,14 +8,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RecSlickCarouselModule } from './slick-carousel/slick-carousel.module'
 
 import { HeaderComponent } from './components/header/header.component';
+import { NavigationComponent } from './components/header/navigation/navigation.component';
+import { LoginComponent } from './components/header/login/login.component';
 import { ContentComponent } from './components/content/content.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { TrendingComponent, SafePipe } from './components/trending/trending.component';
-import { LastActionComponent } from './components/last-action/last-action.component';
+// import { TrendingComponent, SafePipe } from './components/trending/trending.component';
+// import { LastActionComponent } from './components/last-action/last-action.component';
 
 registerLocaleData(en);
 
@@ -25,9 +27,8 @@ registerLocaleData(en);
     HeaderComponent,
     ContentComponent,
     FooterComponent,
-    TrendingComponent,
-    SafePipe,
-    LastActionComponent
+    NavigationComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,8 +36,8 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    SlickCarouselModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RecSlickCarouselModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

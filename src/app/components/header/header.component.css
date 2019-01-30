@@ -2,4 +2,6 @@
 nz-header {
   color: #fff;
   margin-bottom: 0.75em;
+  border-bottom: 1px solid #fff;
+  background-color: #141414;
 }

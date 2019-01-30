@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+h3 {
+  color: #fff;
+}
+
+.slick-next {
+  right: 0;
+  top: -20px;
+}
+
+.slick-prev {
+  left: auto;
+  right: 25px;
+  top: -20px;
+}

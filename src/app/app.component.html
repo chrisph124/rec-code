@@ -1,9 +1,7 @@
 <nz-layout>
-  <app-header></app-header>
+  <rec-header></rec-header>
   <nz-layout style="padding:0 50px;">
-    <app-trending></app-trending>
-    <app-last-action></app-last-action>
-    <app-content></app-content>
+    <rec-slick-carousel [mediaJSON]="mediaJSON"></rec-slick-carousel>
   </nz-layout>
-  <app-footer></app-footer>
+  <rec-footer></rec-footer>
 </nz-layout>
