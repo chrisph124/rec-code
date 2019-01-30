@@ -1,0 +1,24 @@
+.left-cover img {
+  max-width: 100%;
+}
+
+.title {
+  color: #ff1744;
+}
+
+.info {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.description {
+  padding: 5px 10px;
+}
+
+.social-media {
+  display: flex;
+  list-style-type: none;
+  width: 35%;
+  justify-content: space-evenly;
+  padding: 0;
+}

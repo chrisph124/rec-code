@@ -1,5 +1,9 @@
+* {
+  color: white;
+}
+
 nz-layout {
   background-color: #141414;
-  position: relative;
-  height: 100vh;
+  /* position: relative; */
+  height: auto;
 }

@@ -1,13 +1,10 @@
 <main>
-  <!-- <aside class="page-left-aside"  nz-col nzSpan="16"> -->
-    <!-- <video-player [videoUrl]="video.url"></video-player>
-    <video-detail [videoDetail]="video.detail"></video-detail> -->
-  <!-- </aside> -->
-  <!-- <aside nz-col nzSpan="8"></aside> -->
-  <section class="video-player-container" nz-row>
-    <div nz-col nzSpan="18">
+  <section class="video-player" nz-row>
+    <div nz-col nzLg="16" nzXs="24">
       <video-player></video-player>
     </div>
-    <div nz-col nzSpan="6"></div>
+    <div nz-col nzLg="8" nzXs="24" class="related-movies"></div>
   </section>
+  <movie-info nz-row style="padding: 20px;"></movie-info>
+  <comments-and-reviews></comments-and-reviews>
 </main>
