@@ -1,4 +1,7 @@
-/* .related-movies {
-    border: 1px solid white;
-    height: 40vh;
-} */
+.related-movies {
+  padding: 20px;
+}
+
+.related-movies h2 {
+  color: #fff;
+}

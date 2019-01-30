@@ -122,3 +122,44 @@ export const mediaJSON = [
     ]
   }
 ];
+
+export const movieDetails = {
+  "movieId":"3983",
+    "score":6.645978987136699,
+    "title":"Toy Story",
+    "sources": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+    "poster":"https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_.jpg",
+    "tags":[
+       "animation",
+       "adventure",
+       "comedy",
+       "family",
+       "fantasy"
+    ],
+    "relatedMovies": [
+      {
+        "movieId":"3983",
+        "score":6.645978987136699,
+        "title":"Call Me By Your Name",
+        "poster":"https://upload.wikimedia.org/wikipedia/en/c/c9/CallMeByYourName2017.png"
+      },
+      {
+        "movieId":"3984",
+        "score":6.645978987136699,
+        "title":"Interstellar",
+        "poster":"https://images-na.ssl-images-amazon.com/images/I/516j7Sqay4L.jpg"
+      },
+      {
+        "movieId":"3983",
+        "score":6.645978987136699,
+        "title":"Call Me By Your Name",
+        "poster":"https://upload.wikimedia.org/wikipedia/en/c/c9/CallMeByYourName2017.png"
+      },
+      {
+        "movieId":"3984",
+        "score":6.645978987136699,
+        "title":"Interstellar",
+        "poster":"https://images-na.ssl-images-amazon.com/images/I/516j7Sqay4L.jpg"
+      }
+    ]
+}

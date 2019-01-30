@@ -1,0 +1,21 @@
+.item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px auto;
+  width: 200px;
+  height: 300px;
+}
+
+nz-card-meta {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+}
+
+nz-card:hover nz-card-meta {
+  display: block;
+}
+
+.ant-card-meta-title {
+  color: #fff !important;
+}

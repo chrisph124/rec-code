@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'movie-info',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movie-info.component.css']
 })
 export class MovieInfoComponent implements OnInit {
-
+  @Input() movie: Object;
+  
   constructor() { }
 
   ngOnInit() {

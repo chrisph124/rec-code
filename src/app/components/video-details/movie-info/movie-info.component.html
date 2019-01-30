@@ -1,9 +1,9 @@
 <div nz-row nz-col nzSm="24" nzMd="9">
   <div class="left-cover" nz-col nzXs="9">
-      <img src="https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_.jpg" alt="">
+      <img [src]="movie.poster" alt="">
   </div>
   <div class="content" nz-col nzXs="13" nzOffset="2">
-    <h2 class="title">Toy Story</h2>
+    <h2 class="title">{{ movie.title }}</h2>
     <div class="reviews"></div>
     <ul class="info">
       <li>Actor : Priti kapel, Justin orjun</li>
