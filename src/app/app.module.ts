@@ -13,12 +13,13 @@ import { RecSlickCarouselModule } from './slick-carousel/slick-carousel.module'
 
 import { HeaderComponent } from './components/header/header.component';
 import { NavigationComponent } from './components/header/navigation/navigation.component';
+import { RecommendationComponent } from './components/recommendation/recommendation.component';
 import { LoginComponent } from './components/header/login/login.component';
 import { ContentComponent } from './components/content/content.component';
 import { FooterComponent } from './components/footer/footer.component';
+
+import { AppRoutingModule } from './routing/router.module'
 import { VideoDetailsModule } from './components/video-details/video-details.module';
-// import { TrendingComponent, SafePipe } from './components/trending/trending.component';
-// import { LastActionComponent } from './components/last-action/last-action.component';
 
 registerLocaleData(en);
 
@@ -30,6 +31,7 @@ registerLocaleData(en);
     FooterComponent,
     NavigationComponent,
     LoginComponent,
+    RecommendationComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     VideoDetailsModule,
     ReactiveFormsModule,
-    RecSlickCarouselModule
+    RecSlickCarouselModule,
+    AppRoutingModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
