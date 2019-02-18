@@ -7,10 +7,12 @@
   >
     <div ngxSlickItem *ngFor="let video of media.videos" class="slide">
       <nz-card nzHoverable [nzCover]="coverTemplate"  [nzBordered]="false">
-        <nz-card-meta nzTitle="{{video.title}}"></nz-card-meta>
+        <a routerLink="/detail">
+          <nz-card-meta nzTitle="{{video.title}}"></nz-card-meta>
+        </a>
       </nz-card>
       <ng-template #coverTemplate>
-        <video controls>
+        <video>
           <source src="{{video.sources}}" type="video/mp4">
         </video>
       </ng-template>
