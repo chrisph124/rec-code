@@ -1,5 +1,4 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { mediaJSON } from '../../mock-up/media-mockup';
 import { DataService } from 'src/app/services/data.service';
 import { Movie } from 'src/app/models/movie';
 import { Subscription } from 'rxjs';
