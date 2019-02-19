@@ -1,0 +1,1209 @@
+{
+	"recommendation_movies": [
+	  {
+		"movieId": "tt0114709",
+		"title": "Toy Story",
+		"poster": "https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_.jpg",
+		"tags": [ "animation", "adventure", "family"]
+	  },
+	  {
+		"movieId": "tt4154756",
+		"title": " Avengers: Infinity War",
+		"poster": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg",
+		"tags": ["adventure", "action"]
+	  },
+	  {
+		"movieId": "tt4633694",
+		"title": "Spider-Man: Into the Spider-Verse",
+		"poster": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_.jpg",
+		"tags": ["adventure", "family" ]
+	  }
+	],
+	"movies": [
+		{
+			"movieId": "0",
+			"title": "Toy Story",
+			"url": "/title/tt0114709/",
+			"contentRating": "G",
+			"description": "Toy Story is a movie starring Tom Hanks, Tim Allen, and Don Rickles. A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.",
+			"genre": [
+				"Animation",
+				"Adventure",
+				"Comedy",
+				"Family",
+				"Fantasy"
+			],
+			"actor": [
+				"Tom Hanks",
+				"Tim Allen",
+				"Don Rickles",
+				"Jim Varney"
+			],
+			"director": "John Lasseter",
+			"duration": "PT1H21M",
+			"aggregateRating": "8.3",
+			"datePublished": "1995-11-22",
+			"tag": [
+				"toy",
+				"rivalry",
+				"cowboy",
+				"cgi animation",
+				"claw crane"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_.jpg"
+		},
+		{
+			"movieId": "1",
+			"title": "Jumanji",
+			"url": "/title/tt0113497/",
+			"contentRating": "PG",
+			"description": "Jumanji is a movie starring Robin Williams, Kirsten Dunst, and Bonnie Hunt. When two kids find and play a magical board game, they release a man trapped for decades in it and a host of dangers that can only be stopped by finishing...",
+			"genre": [
+				"Adventure",
+				"Family",
+				"Fantasy"
+			],
+			"actor": [
+				"Robin Williams",
+				"Kirsten Dunst",
+				"Bonnie Hunt",
+				"Jonathan Hyde"
+			],
+			"director": "Joe Johnston",
+			"duration": "PT1H44M",
+			"aggregateRating": "6.9",
+			"datePublished": "1995-12-15",
+			"tag": [
+				"board game",
+				"wood",
+				"board",
+				"woodland",
+				"lush"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BZTk2ZmUwYmEtNTcwZS00YmMyLWFkYjMtNTRmZDA3YWExMjc2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+		},
+		{
+			"movieId": "2",
+			"title": "Grumpier Old Men",
+			"url": "/title/tt0113228/",
+			"contentRating": "PG-13",
+			"description": "Grumpier Old Men is a movie starring Walter Matthau, Jack Lemmon, and Ann-Margret. John and Max resolve to save their beloved bait shop from turning into an Italian restaurant, just as its new female owner catches Max's attention.",
+			"genre": [
+				"Comedy",
+				"Romance"
+			],
+			"actor": [
+				"Walter Matthau",
+				"Jack Lemmon",
+				"Ann",
+				"Margret",
+				"Sophia Loren"
+			],
+			"director": "Howard Deutch",
+			"duration": "PT1H41M",
+			"aggregateRating": "6.6",
+			"datePublished": "1995-12-22",
+			"tag": [
+				"boat",
+				"lake",
+				"neighbor",
+				"rivalry",
+				"minnesota"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BMjQxM2YyNjMtZjUxYy00OGYyLTg0MmQtNGE2YzNjYmUyZTY1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+		},
+		{
+			"movieId": "3",
+			"title": "Waiting to Exhale",
+			"url": "/title/tt0114885/",
+			"contentRating": "R",
+			"description": "Waiting to Exhale is a movie starring Whitney Houston, Angela Bassett, and Loretta Devine. Based on Terry McMillan's novel, this film follows four very different African-American women and their relationships with the male gender.",
+			"genre": [
+				"Comedy",
+				"Drama",
+				"Romance"
+			],
+			"actor": [
+				"Whitney Houston",
+				"Angela Bassett",
+				"Loretta Devine",
+				"Lela Rochon"
+			],
+			"director": "Forest Whitaker",
+			"duration": "PT2H4M",
+			"aggregateRating": "5.8",
+			"datePublished": "1995-12-22",
+			"tag": [
+				"black american",
+				"husband wife relationship",
+				"betrayal",
+				"mother son relationship",
+				"african american woman"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BYzcyMDY2YWQtYWJhYy00OGQ2LTk4NzktYWJkNDYwZWJmY2RjXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_.jpg"
+		},
+		{
+			"movieId": "4",
+			"title": "Father of the Bride Part II",
+			"url": "/title/tt0113041/",
+			"contentRating": "PG",
+			"description": "Father of the Bride Part II is a movie starring Steve Martin, Diane Keaton, and Martin Short. George Banks must deal not only with the pregnancy of his daughter, but also with the unexpected pregnancy of his wife.",
+			"genre": [
+				"Comedy",
+				"Family",
+				"Romance"
+			],
+			"actor": [
+				"Steve Martin",
+				"Diane Keaton",
+				"Martin Short",
+				"Kimberly Williams",
+				"Paisley"
+			],
+			"director": "Charles Shyer",
+			"duration": "PT1H46M",
+			"aggregateRating": "6.0",
+			"datePublished": "1995-12-08",
+			"tag": [
+				"fatherhood",
+				"doberman",
+				"dog",
+				"mansion",
+				"basketball"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BOTEyNzg5NjYtNDU4OS00MWYxLWJhMTItYWU4NTkyNDBmM2Y0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+		},
+		{
+			"movieId": "5",
+			"title": "Heat",
+			"url": "/title/tt0113277/",
+			"contentRating": "R",
+			"description": "Heat is a movie starring Al Pacino, Robert De Niro, and Val Kilmer. A group of professional bank robbers start to feel the heat from police when they unknowingly leave a clue at their latest heist.",
+			"genre": [
+				"Crime",
+				"Drama",
+				"Thriller"
+			],
+			"actor": [
+				"Al Pacino",
+				"Robert De Niro",
+				"Val Kilmer",
+				"Jon Voight"
+			],
+			"director": "Michael Mann",
+			"duration": "PT2H50M",
+			"aggregateRating": "8.2",
+			"datePublished": "1995-12-15",
+			"tag": [
+				"gun battle",
+				"honor",
+				"bank",
+				"armored car robbery",
+				"child in jeopardy"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BNDc0YTQ5NGEtM2NkYS00MWRhLThiNzAtNmY3NWU3YzNkMjIyXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+		},
+		{
+			"movieId": "6",
+			"title": "Sabrina",
+			"url": "/title/tt0114319/",
+			"contentRating": "PG",
+			"description": "Sabrina is a movie starring Harrison Ford, Julia Ormond, and Greg Kinnear. An ugly duckling having undergone a remarkable change, still harbors feelings for her crush: a carefree playboy, but not before his business-focused brother...",
+			"genre": [
+				"Comedy",
+				"Drama"
+			],
+			"actor": [
+				"Harrison Ford",
+				"Julia Ormond",
+				"Greg Kinnear",
+				"Nancy Marchand"
+			],
+			"director": "Sydney Pollack",
+			"duration": "PT2H7M",
+			"aggregateRating": "6.3",
+			"datePublished": "1995-12-15",
+			"tag": [
+				"chauffeur",
+				"estate",
+				"playboy",
+				"vogue magazine",
+				"cinderella story"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BYjQ5ZjQ0YzQtOGY3My00MWVhLTgzNWItOTYwMTE5N2ZiMDUyXkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_.jpg"
+		},
+		{
+			"movieId": "7",
+			"title": "Tom and Huck",
+			"url": "/title/tt0112302/",
+			"contentRating": "PG",
+			"description": "Tom and Huck is a movie starring Jonathan Taylor Thomas, Brad Renfro, and Charles Rocket. Two best friends witness a murder and embark on a series of adventures in order to prove the innocence of the man wrongly accused of the crime.",
+			"genre": [
+				"Adventure",
+				"Comedy",
+				"Drama",
+				"Family",
+				"Romance",
+				"Western"
+			],
+			"actor": [
+				"Jonathan Taylor Thomas",
+				"Brad Renfro",
+				"Charles Rocket",
+				"Eric Schweig"
+			],
+			"director": "Peter Hewitt",
+			"duration": "PT1H37M",
+			"aggregateRating": "5.6",
+			"datePublished": "1995-12-22",
+			"tag": [
+				"rescue from drowning",
+				"near drowning",
+				"murder",
+				"boy",
+				"witness"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BN2ZkZTMxOTAtMzg1Mi00M2U0LWE2NWItZDg4YmQyZjVkMDdhXkEyXkFqcGdeQXVyNTM5NzI0NDY@._V1_.jpg"
+		},
+		{
+			"movieId": "8",
+			"title": "Sudden Death",
+			"url": "/title/tt0114576/",
+			"contentRating": "R",
+			"description": "Sudden Death is a movie starring Jean-Claude Van Damme, Powers Boothe, and Raymond J. Barry. A former fireman takes on a group of terrorists holding the Vice President and others hostage during the seventh game of the NHL Stanley...",
+			"genre": [
+				"Action",
+				"Crime",
+				"Thriller"
+			],
+			"actor": [
+				"Jean",
+				"Claude Van Damme",
+				"Powers Boothe",
+				"Raymond J. Barry",
+				"Whittni Wright"
+			],
+			"director": "Peter Hyams",
+			"duration": "PT1H51M",
+			"aggregateRating": "5.7",
+			"datePublished": "1995-10-27",
+			"tag": [
+				"hockey",
+				"terrorist",
+				"vice president",
+				"explosive",
+				"hostage"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BN2NjYWE5NjMtODlmZC00MjJhLWFkZTktYTJlZTI4YjVkMGNmXkEyXkFqcGdeQXVyNDc2NjEyMw@@._V1_.jpg"
+		},
+		{
+			"movieId": "9",
+			"title": "GoldenEye",
+			"url": "/title/tt0113189/",
+			"contentRating": "PG-13",
+			"description": "GoldenEye is a movie starring Pierce Brosnan, Sean Bean, and Izabella Scorupco. James Bond teams up with the lone survivor of a destroyed Russian research center to stop the hijacking of a nuclear space weapon by a fellow Agent...",
+			"genre": [
+				"Action",
+				"Adventure",
+				"Thriller"
+			],
+			"actor": [
+				"Pierce Brosnan",
+				"Sean Bean",
+				"Izabella Scorupco",
+				"Famke Janssen"
+			],
+			"director": "Martin Campbell",
+			"duration": "PT2H10M",
+			"aggregateRating": "7.2",
+			"datePublished": "1995-11-16",
+			"tag": [
+				"official james bond series",
+				"james bond character",
+				"007",
+				"chemical weapons",
+				"electromagnetic pulse"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BMzk2OTg4MTk1NF5BMl5BanBnXkFtZTcwNjExNTgzNA@@._V1_.jpg"
+		},
+		{
+			"movieId": "10",
+			"title": "The American President",
+			"url": "/title/tt0112346/",
+			"contentRating": "PG-13",
+			"description": "The American President is a movie starring Michael Douglas, Annette Bening, and Martin Sheen. Comedy-drama about a widowed U.S. President and a lobbyist who fall in love. It's all above-board, but \"politics is perception\", and...",
+			"genre": [
+				"Comedy",
+				"Drama",
+				"Romance"
+			],
+			"actor": [
+				"Michael Douglas",
+				"Annette Bening",
+				"Martin Sheen",
+				"Michael J. Fox"
+			],
+			"director": "Rob Reiner",
+			"duration": "PT1H54M",
+			"aggregateRating": "6.8",
+			"datePublished": "1995-11-17",
+			"tag": [
+				"reference to franklin d. roosevelt",
+				"reference to martin van buren",
+				"president",
+				"american president",
+				"lobbyist"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BMTI5NDU2NDYzOF5BMl5BanBnXkFtZTYwNDk5MDI5._V1_.jpg"
+		},
+		{
+			"movieId": "11",
+			"title": "Dracula: Dead and Loving It",
+			"url": "/title/tt0112896/",
+			"contentRating": "PG-13",
+			"description": "Dracula: Dead and Loving It is a movie starring Leslie Nielsen, Mel Brooks, and Peter MacNicol. Mel Brooks' parody of the classic vampire story and its famous film adaptations.",
+			"genre": [
+				"Comedy",
+				"Fantasy",
+				"Horror"
+			],
+			"actor": [
+				"Leslie Nielsen",
+				"Mel Brooks",
+				"Peter MacNicol",
+				"Steven Weber"
+			],
+			"director": "Mel Brooks",
+			"duration": "PT1H28M",
+			"aggregateRating": "5.8",
+			"datePublished": "1995-12-22",
+			"tag": [
+				"dracula",
+				"vampire",
+				"insane asylum",
+				"cleavage",
+				"campy"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BZWQ0ZDFmYzMtZGMyMi00NmYxLWE0MGYtYzM2ZGNhMTE1NTczL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjM5ODMxODc@._V1_.jpg"
+		},
+		{
+			"movieId": "12",
+			"title": "Balto",
+			"url": "/title/tt0112453/",
+			"contentRating": "G",
+			"description": "Balto is a movie starring Kevin Bacon, Bob Hoskins, and Bridget Fonda. An outcast half-wolf risks his life to prevent a deadly epidemic from ravaging Nome, Alaska.",
+			"genre": [
+				"Animation",
+				"Adventure",
+				"Drama",
+				"Family",
+				"History"
+			],
+			"actor": [
+				"Kevin Bacon",
+				"Bob Hoskins",
+				"Bridget Fonda",
+				"Jim Cummings"
+			],
+			"director": "Simon Wells",
+			"duration": "PT1H18M",
+			"aggregateRating": "7.1",
+			"datePublished": "1995-12-22",
+			"tag": [
+				"dog",
+				"nome alaska",
+				"alaska",
+				"children",
+				"iditarod"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BMjBhNmFlZjMtMzhlYy00NDBlLWFiMjctMmE0ZjgwOGM2MTNmXkEyXkFqcGdeQXVyNjExODE1MDc@._V1_.jpg"
+		},
+		{
+			"movieId": "13",
+			"title": "Nixon",
+			"url": "/title/tt0113987/",
+			"contentRating": "R",
+			"description": "Nixon is a movie starring Anthony Hopkins, Joan Allen, and Powers Boothe. A biographical story of former U.S. President Richard Milhous Nixon, from his days as a young boy, to his eventual Presidency, which ended in shame.",
+			"genre": [
+				"Biography",
+				"Drama",
+				"History"
+			],
+			"actor": [
+				"Anthony Hopkins",
+				"Joan Allen",
+				"Powers Boothe",
+				"Ed Harris"
+			],
+			"director": "Oliver Stone",
+			"duration": "PT3H12M",
+			"aggregateRating": "7.1",
+			"datePublished": "1996-01-05",
+			"tag": [
+				"surname as title",
+				"u.s. history",
+				"bedroom",
+				"black and white scene",
+				"father son relationship"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BNzBlOWY0ZmEtZjdkYS00ZGU0LWEwN2YtYzBkNDM5ZDBjMmI1XkEyXkFqcGdeQXVyMTAwMzUyOTc@._V1_.jpg"
+		},
+		{
+			"movieId": "14",
+			"title": "Cutthroat Island",
+			"url": "/title/tt0112760/",
+			"contentRating": "PG-13",
+			"description": "Cutthroat Island is a movie starring Geena Davis, Matthew Modine, and Frank Langella. A female pirate and her companion race against their rivals to find a hidden island that contains a fabulous treasure.",
+			"genre": [
+				"Action",
+				"Adventure",
+				"Comedy"
+			],
+			"actor": [
+				"Geena Davis",
+				"Matthew Modine",
+				"Frank Langella",
+				"Maury Chaykin"
+			],
+			"director": "Renny Harlin",
+			"duration": "PT2H4M",
+			"aggregateRating": "5.6",
+			"datePublished": "1995-12-22",
+			"tag": [
+				"treasure",
+				"pirate",
+				"latin",
+				"treasure map",
+				"pirate ship"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BMDg2YTI0YmQtYzgwMi00Zjk4LWJkZjgtYjg0ZDE2ODUzY2RlL2ltYWdlXkEyXkFqcGdeQXVyNjQzNDI3NzY@._V1_.jpg"
+		},
+		{
+			"movieId": "15",
+			"title": "Casino",
+			"url": "/title/tt0112641/",
+			"contentRating": "R",
+			"description": "Casino is a movie starring Robert De Niro, Sharon Stone, and Joe Pesci. A tale of greed, deception, money, power, and murder occur between two best friends: a mafia enforcer and a casino executive, compete against each other over a...",
+			"genre": [
+				"Crime",
+				"Drama"
+			],
+			"actor": [
+				"Robert De Niro",
+				"Sharon Stone",
+				"Joe Pesci",
+				"James Woods"
+			],
+			"director": "Martin Scorsese",
+			"duration": "PT2H58M",
+			"aggregateRating": "8.2",
+			"datePublished": "1995-11-22",
+			"tag": [
+				"crime epic",
+				"casino",
+				"gambling",
+				"gangster",
+				"exploding car"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BMTcxOWYzNDYtYmM4YS00N2NkLTk0NTAtNjg1ODgwZjAxYzI3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg"
+		},
+		{
+			"movieId": "16",
+			"title": "Sense and Sensibility",
+			"url": "/title/tt0114388/",
+			"contentRating": "PG",
+			"description": "Sense and Sensibility is a movie starring Emma Thompson, Kate Winslet, and James Fleet. Rich Mr. Dashwood dies, leaving his second wife and her three daughters poor by the rules of inheritance. The two eldest daughters are the...",
+			"genre": [
+				"Drama",
+				"Romance"
+			],
+			"actor": [
+				"Emma Thompson",
+				"Kate Winslet",
+				"James Fleet",
+				"Tom Wilkinson"
+			],
+			"director": "Ang Lee",
+			"duration": "PT2H16M",
+			"aggregateRating": "7.7",
+			"datePublished": "1995-12-13",
+			"tag": [
+				"england",
+				"19th century",
+				"based on novel",
+				"black hair",
+				"visit"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BNzk1MjU3MDQyMl5BMl5BanBnXkFtZTcwNjc1OTM2MQ@@._V1_.jpg"
+		},
+		{
+			"movieId": "17",
+			"title": "Ace Ventura: When Nature Calls",
+			"url": "/title/tt0112281/",
+			"contentRating": "PG-13",
+			"description": "Ace Ventura: When Nature Calls is a movie starring Jim Carrey, Ian McNeice, and Simon Callow. Ace Ventura, Pet Detective, returns from a spiritual quest to investigate the disappearance of a rare white bat, the sacred animal of a...",
+			"genre": [
+				"Adventure",
+				"Comedy",
+				"Crime"
+			],
+			"actor": [
+				"Jim Carrey",
+				"Ian McNeice",
+				"Simon Callow",
+				"Maynard Eziashi"
+			],
+			"director": "Steve Oedekerk",
+			"duration": "PT1H30M",
+			"aggregateRating": "6.3",
+			"datePublished": "1995-11-10",
+			"tag": [
+				"male objectification",
+				"kidnapping",
+				"caught masturbating",
+				"fictional country",
+				"slapstick comedy"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BNGFiYTgxZDctNGI4OS00MWU1LWIwOGUtZmMyNGQxYjVkZjQ3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+		},
+		{
+			"movieId": "18",
+			"title": "Money Train",
+			"url": "/title/tt0113845/",
+			"contentRating": "R",
+			"description": "Money Train is a movie starring Wesley Snipes, Woody Harrelson, and Jennifer Lopez. A vengeful New York City transit cop decides to steal a trainload of subway fares. His foster brother, a fellow cop, tries to protect him.",
+			"genre": [
+				"Action",
+				"Comedy",
+				"Crime",
+				"Drama",
+				"Thriller"
+			],
+			"actor": [
+				"Wesley Snipes",
+				"Woody Harrelson",
+				"Jennifer Lopez",
+				"Robert Blake"
+			],
+			"director": "Joseph Ruben",
+			"duration": "PT1H50M",
+			"aggregateRating": "5.6",
+			"datePublished": "1995-11-22",
+			"tag": [
+				"train",
+				"subway",
+				"loan shark",
+				"new year's eve",
+				"runaway train"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BYWZlMzIwYzYtOWZiMi00ZGEzLWFhYmQtNmEzYzJlNDg1NjhjXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
+		},
+		{
+			"movieId": "19",
+			"title": "Get Shorty",
+			"url": "/title/tt0113161/",
+			"contentRating": "R",
+			"description": "Get Shorty is a movie starring Gene Hackman, Rene Russo, and Danny DeVito. A mobster travels to Hollywood to collect a debt, and discovers that the movie business is much the same as his current job.",
+			"genre": [
+				"Comedy",
+				"Crime",
+				"Thriller"
+			],
+			"actor": [
+				"Gene Hackman",
+				"Rene Russo",
+				"Danny DeVito",
+				"John Travolta"
+			],
+			"director": "Barry Sonnenfeld",
+			"duration": "PT1H45M",
+			"aggregateRating": "6.9",
+			"datePublished": "1995-10-20",
+			"tag": [
+				"movie business",
+				"loan shark",
+				"debt",
+				"mobster",
+				"producer"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BMjAwODYzNDY4Ml5BMl5BanBnXkFtZTcwODkwNTgzNA@@._V1_.jpg"
+		},
+		{
+			"movieId": "20",
+			"title": "Copycat",
+			"url": "/title/tt0112722/",
+			"contentRating": "R",
+			"description": "Copycat is a movie starring Sigourney Weaver, Holly Hunter, and Dermot Mulroney. An agoraphobic psychologist and a female detective must work together to take down a serial killer who copies serial killers from the past.",
+			"genre": [
+				"Drama",
+				"Mystery",
+				"Thriller"
+			],
+			"actor": [
+				"Sigourney Weaver",
+				"Holly Hunter",
+				"Dermot Mulroney",
+				"William McNamara"
+			],
+			"director": "Jon Amiel",
+			"duration": "PT2H3M",
+			"aggregateRating": "6.6",
+			"datePublished": "1995-10-27",
+			"tag": [
+				"serial killer",
+				"psychopath",
+				"dead body in a bathtub",
+				"detective",
+				"murder"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BYWUwNDk2ZDYtNmFkMi00NjE5LWE1M2ItYTRkNTFjZDU3ZDU4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTYxNjkxOQ@@._V1_.jpg"
+		},
+		{
+			"movieId": "21",
+			"title": "Assassins",
+			"url": "/title/tt0112401/",
+			"contentRating": "R",
+			"description": "Assassins is a movie starring Sylvester Stallone, Antonio Banderas, and Julianne Moore. Professional hit-man Robert Rath wants to fulfill a few more contracts before retiring but unscrupulous ambitious newcomer hit-man Miguel Bain...",
+			"genre": [
+				"Action",
+				"Crime",
+				"Thriller"
+			],
+			"actor": [
+				"Sylvester Stallone",
+				"Antonio Banderas",
+				"Julianne Moore",
+				"Anatoli Davydov"
+			],
+			"director": "Richard Donner",
+			"duration": "PT2H12M",
+			"aggregateRating": "6.3",
+			"datePublished": "1995-10-06",
+			"tag": [
+				"rival",
+				"computer hacker",
+				"limousine",
+				"slow motion scene",
+				"rain"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BZGI1NDA4ZDItNTRjMi00YTU3LTkwZDEtYjdlNTI1ZjQxZDM1XkEyXkFqcGdeQXVyNDc2NjEyMw@@._V1_.jpg"
+		},
+		{
+			"movieId": "22",
+			"title": "Powder",
+			"url": "/title/tt0114168/",
+			"contentRating": "PG-13",
+			"description": "Powder is a movie starring Mary Steenburgen, Sean Patrick Flanery, and Lance Henriksen. An off the charts genius who is home schooled and shunned after his last relative dies shows the unconscious residents of his town about...",
+			"genre": [
+				"Drama",
+				"Fantasy",
+				"Mystery",
+				"Sci",
+				"Fi",
+				"Thriller"
+			],
+			"actor": [
+				"Mary Steenburgen",
+				"Sean Patrick Flanery",
+				"Lance Henriksen",
+				"Jeff Goldblum"
+			],
+			"director": "Victor Salva",
+			"duration": "PT1H51M",
+			"aggregateRating": "6.6",
+			"datePublished": "1995-10-27",
+			"tag": [
+				"albino",
+				"electricity",
+				"loneliness",
+				"bully",
+				"spoon"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BOGUzYzNiZTItYmZlNi00ODI1LThjNTMtNjI1MTNlZDQ0OGY2XkEyXkFqcGdeQXVyNjExODE1MDc@._V1_.jpg"
+		},
+		{
+			"movieId": "23",
+			"title": "Leaving Las Vegas",
+			"url": "/title/tt0113627/",
+			"contentRating": "R",
+			"description": "Leaving Las Vegas is a movie starring Nicolas Cage, Elisabeth Shue, and Julian Sands. Ben Sanderson, a Hollywood screenwriter who lost everything because of his alcoholism, arrives in Las Vegas to drink himself to death. There, he...",
+			"genre": [
+				"Drama",
+				"Romance"
+			],
+			"actor": [
+				"Nicolas Cage",
+				"Elisabeth Shue",
+				"Julian Sands",
+				"Richard Lewis"
+			],
+			"director": "Mike Figgis",
+			"duration": "PT1H51M",
+			"aggregateRating": "7.5",
+			"datePublished": "1995-12-01",
+			"tag": [
+				"prostitute",
+				"las vegas nevada",
+				"alcoholism",
+				"falling in love with a prostitute",
+				"self destruction"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BNDg3MDM5NTI0MF5BMl5BanBnXkFtZTcwNDY0NDk0NA@@._V1_.jpg"
+		},
+		{
+			"movieId": "24",
+			"title": "Othello",
+			"url": "/title/tt0114057/",
+			"contentRating": "R",
+			"description": "Othello is a movie starring Laurence Fishburne, Kenneth Branagh, and Irène Jacob. The Moorish General Othello is manipulated into thinking that his new wife Desdemona has been carrying on an affair with his Lieutenant Michael...",
+			"genre": [
+				"Drama",
+				"Romance"
+			],
+			"actor": [
+				"Laurence Fishburne",
+				"Kenneth Branagh",
+				"Irène Jacob",
+				"Nathaniel Parker"
+			],
+			"director": "Oliver Parker",
+			"duration": "PT2H3M",
+			"aggregateRating": "6.9",
+			"datePublished": "1996-01-19",
+			"tag": [
+				"italy",
+				"scheme",
+				"lieutenant",
+				"general",
+				"jealousy"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BMTIxMzA2ODk2NV5BMl5BanBnXkFtZTcwMzQ4ODIyMQ@@._V1_.jpg"
+		}
+	],
+	"similar_movies": [
+		{
+			"movieId": "345",
+			"title": "Boxing Helena",
+			"url": "/title/tt0106471/",
+			"contentRating": "R",
+			"description": "Boxing Helena is a movie starring Julian Sands, Sherilyn Fenn, and Bill Paxton. A surgeon becomes obsessed with the seductive woman he once was in an affair with. Refusing to accept that she has moved on, he amputates her limbs and...",
+			"genre": [
+				"Drama",
+				"Mystery",
+				"Romance",
+				"Thriller"
+			],
+			"actor": [
+				"Julian Sands",
+				"Sherilyn Fenn",
+				"Bill Paxton",
+				"Kurtwood Smith"
+			],
+			"director": "Jennifer Lynch",
+			"duration": "PT1H47M",
+			"aggregateRating": "4.6",
+			"datePublished": "1993-06-18",
+			"tag": [
+				"obsessive love",
+				"captive woman",
+				"unrequited love",
+				"obsession",
+				"bare chested male"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BYjdhOWE4MDMtZGM5Zi00Mzc1LTkyNWUtYWQ1ODU4NGEyZDhiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+		},
+		{
+			"movieId": "6456",
+			"title": "Callas Forever",
+			"url": "/title/tt0274407/",
+			"contentRating": "PG-13",
+			"description": "Callas Forever is a movie starring Fanny Ardant, Jeremy Irons, and Joan Plowright. The last days of legendary opera singer Maria Callas.",
+			"genre": [
+				"Biography",
+				"Drama",
+				"Music",
+				"Romance"
+			],
+			"actor": [
+				"Fanny Ardant",
+				"Jeremy Irons",
+				"Joan Plowright",
+				"Jay Rodan"
+			],
+			"director": "Franco Zeffirelli",
+			"duration": "PT1H51M",
+			"aggregateRating": "6.6",
+			"datePublished": "2002-09-18",
+			"tag": [
+				"opera singer",
+				"singer",
+				"concert",
+				"opera",
+				"diva"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BMTcxMDM3Njg4Nl5BMl5BanBnXkFtZTYwMzQ4Mzk5._V1_.jpg"
+		},
+		{
+			"movieId": "2342",
+			"title": "Scrooged",
+			"url": "/title/tt0096061/",
+			"contentRating": "PG-13",
+			"description": "Scrooged is a movie starring Bill Murray, Karen Allen, and John Forsythe. A selfish, cynical television executive is haunted by three spirits bearing lessons on Christmas Eve.",
+			"genre": [
+				"Comedy",
+				"Drama",
+				"Fantasy",
+				"Romance"
+			],
+			"actor": [
+				"Bill Murray",
+				"Karen Allen",
+				"John Forsythe",
+				"John Glover"
+			],
+			"director": "Richard Donner",
+			"duration": "PT1H41M",
+			"aggregateRating": "7.0",
+			"datePublished": "1988-11-23",
+			"tag": [
+				"compassion",
+				"ghost",
+				"redemption",
+				"greed",
+				"tv show"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BM2NlMDQzMDktNTMyZS00MjBjLWI0MmEtMzgzZDM2ZTVkNzE1XkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_.jpg"
+		},
+		{
+			"movieId": "8768",
+			"title": "The Bridge",
+			"url": "/title/tt0799954/",
+			"contentRating": "R",
+			"description": "The Bridge is a movie starring Eric Geleynse, Chris Brown, and Susan Ginwalla. People suffer largely unnoticed while the rest of the world goes about its business. This is a documentary exploration of the mythic beauty of the Golden...",
+			"genre": [
+				"Documentary",
+				"Drama"
+			],
+			"actor": [
+				"Eric Geleynse",
+				"Chris Brown",
+				"Susan Ginwalla",
+				"Caroline Pressley"
+			],
+			"director": "Eric Steel",
+			"duration": "PT1H34M",
+			"aggregateRating": "7.3",
+			"datePublished": "2007-02-16",
+			"tag": [
+				"suicide",
+				"bridge",
+				"golden gate bridge",
+				"suicide by jumping off a bridge",
+				"san francisco california"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BMDJhNTlkYmItZGYzMC00Zjg5LWEzMWUtMmMwNDcyNTRiZGEwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+		},
+		{
+			"movieId": "534",
+			"title": "Space Jam",
+			"url": "/title/tt0117705/",
+			"contentRating": "PG",
+			"description": "Space Jam is a movie starring Michael Jordan, Wayne Knight, and Theresa Randle. In a desperate attempt to win a basketball match and earn their freedom, the Looney Tunes seek the aid of retired basketball champion, Michael Jordan.",
+			"genre": [
+				"Animation",
+				"Adventure",
+				"Comedy",
+				"Family",
+				"Fantasy",
+				"Sci",
+				"Fi",
+				"Sport"
+			],
+			"actor": [
+				"Michael Jordan",
+				"Wayne Knight",
+				"Theresa Randle",
+				"Manner Washington"
+			],
+			"director": "Joe Pytka",
+			"duration": "PT1H28M",
+			"aggregateRating": "6.4",
+			"datePublished": "1996-11-15",
+			"tag": [
+				"basketball",
+				"looney tunes",
+				"basketball game",
+				"alien",
+				"chicago bulls"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BMDgyZTI2YmYtZmI4ZC00MzE0LWIxZWYtMWRlZWYxNjliNTJjXkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_.jpg"
+		},
+		{
+			"movieId": "4234",
+			"title": "The Good Girl",
+			"url": "/title/tt0279113/",
+			"contentRating": "R",
+			"description": "The Good Girl is a movie starring Jennifer Aniston, Jake Gyllenhaal, and Deborah Rush. A discount store clerk strikes up an affair with a stock boy who considers himself the incarnation of Holden Caulfield.",
+			"genre": [
+				"Drama",
+				"Romance"
+			],
+			"actor": [
+				"Jennifer Aniston",
+				"Jake Gyllenhaal",
+				"Deborah Rush",
+				"Mike White"
+			],
+			"director": "Miguel Arteta",
+			"duration": "PT1H33M",
+			"aggregateRating": "6.4",
+			"datePublished": "2002-08-25",
+			"tag": [
+				"store",
+				"trying to conceive",
+				"marijuana",
+				"dysfunctional marriage",
+				"small town"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BODA1NjA3MzAtNGYyYS00YThmLThkZDktNDk1ZTM4ZTJmNDgyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+		},
+		{
+			"movieId": "tt0067482",
+			"title": "A New Leaf",
+			"url": "/title/tt0067482/",
+			"contentRating": "G",
+			"description": "A New Leaf is a movie starring Walter Matthau, Elaine May, and Jack Weston. Henry Graham lives the life of a playboy. When his lawyer tells him one day that his lifestyle has consumed all his funds, he needs an idea to avoid...",
+			"genre": [
+				"Comedy",
+				"Romance"
+			],
+			"actor": [
+				"Walter Matthau",
+				"Elaine May",
+				"Jack Weston",
+				"George Rose"
+			],
+			"director": "Elaine May",
+			"duration": "PT1H42M",
+			"aggregateRating": "7.4",
+			"datePublished": "1971-07-19",
+			"tag": [
+				"murder",
+				"marriage for money",
+				"camping",
+				"triple f rated",
+				"neo screwball comedy"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BZGE1YTk0YzUtMDRlNC00NWM5LWE3MWMtMjk1ZWM1MDdjM2IxL2ltYWdlXkEyXkFqcGdeQXVyMjI4MjA5MzA@._V1_.jpg"
+		},
+		{
+			"movieId": "tt0126344",
+			"title": "I Went Down",
+			"url": "/title/tt0126344/",
+			"contentRating": "R",
+			"description": "I Went Down is a movie starring Brendan Gleeson, Peter McDonald, and Antoine Byrne. Fresh out of prison, Git rescues a former best friend (now living with Git's girlfriend) from a beating at the hands of loan sharks. He's now in...",
+			"genre": [
+				"Action",
+				"Comedy",
+				"Crime",
+				"Drama"
+			],
+			"actor": [
+				"Brendan Gleeson",
+				"Peter McDonald",
+				"Antoine Byrne",
+				"David Wilmot"
+			],
+			"director": "Paddy Breathnach",
+			"duration": "PT1H47M",
+			"aggregateRating": "7.0",
+			"datePublished": "1997-10-03",
+			"tag": [
+				"murder",
+				"bog",
+				"money",
+				"beating",
+				"prison"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BZjljNTBlYmItYTY0NS00ODQ0LThjNTMtZmY1NTU4NTQ0MzM5XkEyXkFqcGdeQXVyMDU5NDcxNw@@._V1_.jpg"
+		},
+		{
+			"movieId": "tt0119209",
+			"title": "Going All the Way",
+			"url": "/title/tt0119209/",
+			"contentRating": "R",
+			"description": "Going All the Way is a movie starring Jeremy Davies, Ben Affleck, and Amy Locane. After returning home from the Korean War, two young men search for love and fulfillment in middle America.",
+			"genre": [
+				"Comedy",
+				"Drama"
+			],
+			"actor": [
+				"Jeremy Davies",
+				"Ben Affleck",
+				"Amy Locane",
+				"Rose McGowan"
+			],
+			"director": "Mark Pellington",
+			"duration": "PT1H43M",
+			"aggregateRating": "5.7",
+			"datePublished": "1997-09-19",
+			"tag": [
+				"attempted suicide",
+				"lust",
+				"breasts",
+				"female frontal nudity",
+				"nipples"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BZTVhZTIyYmMtOTVmZi00MDAzLWIzZjMtNTQzZTUyNzcyZTdhXkEyXkFqcGdeQXVyNjU0NTI0Nw@@._V1_.jpg"
+		},
+		{
+			"movieId": "1231",
+			"title": "I Know What You Did Last Summer",
+			"url": "/title/tt0119345/",
+			"contentRating": "R",
+			"description": "I Know What You Did Last Summer is a movie starring Jennifer Love Hewitt, Sarah Michelle Gellar, and Anne Heche. Four young friends bound by a tragic accident are reunited when they find themselves being stalked by a hook-wielding...",
+			"genre": [
+				"Horror",
+				"Mystery"
+			],
+			"actor": [
+				"Jennifer Love Hewitt",
+				"Sarah Michelle Gellar",
+				"Anne Heche",
+				"Ryan Phillippe"
+			],
+			"director": "Jim Gillespie",
+			"duration": "PT1H41M",
+			"aggregateRating": "5.7",
+			"datePublished": "1997-10-17",
+			"tag": [
+				"taking a shower",
+				"teenage girl",
+				"overalls",
+				"bikini",
+				"female in shower"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BZDI4ODJlNGUtNjFiMy00ODgzLWIzYjgtMzgyZTljZDQ2NGZiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+		}
+	],
+	"relatedMovies": [
+		{
+			"movieId": "tt0067482",
+			"title": "A New Leaf",
+			"url": "/title/tt0067482/",
+			"contentRating": "G",
+			"description": "A New Leaf is a movie starring Walter Matthau, Elaine May, and Jack Weston. Henry Graham lives the life of a playboy. When his lawyer tells him one day that his lifestyle has consumed all his funds, he needs an idea to avoid...",
+			"genre": [
+				"Comedy",
+				"Romance"
+			],
+			"actor": [
+				"Walter Matthau",
+				"Elaine May",
+				"Jack Weston",
+				"George Rose"
+			],
+			"director": "Elaine May",
+			"duration": "PT1H42M",
+			"aggregateRating": "7.4",
+			"datePublished": "1971-07-19",
+			"tag": [
+				"murder",
+				"marriage for money",
+				"camping",
+				"triple f rated",
+				"neo screwball comedy"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BZGE1YTk0YzUtMDRlNC00NWM5LWE3MWMtMjk1ZWM1MDdjM2IxL2ltYWdlXkEyXkFqcGdeQXVyMjI4MjA5MzA@._V1_.jpg"
+		},
+		{
+			"movieId": "tt0126344",
+			"title": "I Went Down",
+			"url": "/title/tt0126344/",
+			"contentRating": "R",
+			"description": "I Went Down is a movie starring Brendan Gleeson, Peter McDonald, and Antoine Byrne. Fresh out of prison, Git rescues a former best friend (now living with Git's girlfriend) from a beating at the hands of loan sharks. He's now in...",
+			"genre": [
+				"Action",
+				"Comedy",
+				"Crime",
+				"Drama"
+			],
+			"actor": [
+				"Brendan Gleeson",
+				"Peter McDonald",
+				"Antoine Byrne",
+				"David Wilmot"
+			],
+			"director": "Paddy Breathnach",
+			"duration": "PT1H47M",
+			"aggregateRating": "7.0",
+			"datePublished": "1997-10-03",
+			"tag": [
+				"murder",
+				"bog",
+				"money",
+				"beating",
+				"prison"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BZjljNTBlYmItYTY0NS00ODQ0LThjNTMtZmY1NTU4NTQ0MzM5XkEyXkFqcGdeQXVyMDU5NDcxNw@@._V1_.jpg"
+		},
+		{
+			"movieId": "tt0119209",
+			"title": "Going All the Way",
+			"url": "/title/tt0119209/",
+			"contentRating": "R",
+			"description": "Going All the Way is a movie starring Jeremy Davies, Ben Affleck, and Amy Locane. After returning home from the Korean War, two young men search for love and fulfillment in middle America.",
+			"genre": [
+				"Comedy",
+				"Drama"
+			],
+			"actor": [
+				"Jeremy Davies",
+				"Ben Affleck",
+				"Amy Locane",
+				"Rose McGowan"
+			],
+			"director": "Mark Pellington",
+			"duration": "PT1H43M",
+			"aggregateRating": "5.7",
+			"datePublished": "1997-09-19",
+			"tag": [
+				"attempted suicide",
+				"lust",
+				"breasts",
+				"female frontal nudity",
+				"nipples"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BZTVhZTIyYmMtOTVmZi00MDAzLWIzZjMtNTQzZTUyNzcyZTdhXkEyXkFqcGdeQXVyNjU0NTI0Nw@@._V1_.jpg"
+		},
+		{
+			"movieId": "1231",
+			"title": "I Know What You Did Last Summer",
+			"url": "/title/tt0119345/",
+			"contentRating": "R",
+			"description": "I Know What You Did Last Summer is a movie starring Jennifer Love Hewitt, Sarah Michelle Gellar, and Anne Heche. Four young friends bound by a tragic accident are reunited when they find themselves being stalked by a hook-wielding...",
+			"genre": [
+				"Horror",
+				"Mystery"
+			],
+			"actor": [
+				"Jennifer Love Hewitt",
+				"Sarah Michelle Gellar",
+				"Anne Heche",
+				"Ryan Phillippe"
+			],
+			"director": "Jim Gillespie",
+			"duration": "PT1H41M",
+			"aggregateRating": "5.7",
+			"datePublished": "1997-10-17",
+			"tag": [
+				"taking a shower",
+				"teenage girl",
+				"overalls",
+				"bikini",
+				"female in shower"
+			],
+			"poster": "https://m.media-amazon.com/images/M/MV5BZDI4ODJlNGUtNjFiMy00ODgzLWIzYjgtMzgyZTljZDQ2NGZiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+		}
+	]
+}

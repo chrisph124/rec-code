@@ -1,20 +1,22 @@
-<nz-layout *ngFor="let media of mediaJSON">
-  <h3>{{media.tags}}</h3>
-  <ngx-slick-carousel
+<nz-layout>
+  <h3>{{titleCarousel}}</h3>
+  <ngx-slick-carousel style="padding:0.25em 3em;"
     class="carousel"
     #slickModal="slick-carousel"
     [config]="slideConfig"
   >
-    <div ngxSlickItem *ngFor="let video of media.videos" class="slide">
-      <nz-card nzHoverable [nzCover]="coverTemplate"  [nzBordered]="false">
-        <a routerLink="/detail">
-          <nz-card-meta nzTitle="{{video.title}}"></nz-card-meta>
-        </a>
+    <div ngxSlickItem *ngFor="let video of listVideo" class="slide">
+      <nz-card nzHoverable [nzCover]="coverTemplate" [nzLoading]="imageLoading" [nzBordered]="false">
+        <nz-card-meta nzTitle="{{video.title}}" [nzDescription]="actorTemplate"></nz-card-meta>
       </nz-card>
+      <ng-template #avatarTemplate>
+        <nz-avatar (click)="showDetailVideo(video.movieId)" nzSrc="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
+      </ng-template>
       <ng-template #coverTemplate>
-        <video>
-          <source src="{{video.sources}}" type="video/mp4">
-        </video>
+        <img (click)="showDetailVideo(video.movieId)" alt="{{video.title}}" src="{{video.poster}}"/>
+      </ng-template>
+      <ng-template #actorTemplate>
+        Actor: <a *ngFor="let actor of video.actor; let last = last;">{{actor}}<span *ngIf="!last">, </span></a>
       </ng-template>
     </div>
   </ngx-slick-carousel>

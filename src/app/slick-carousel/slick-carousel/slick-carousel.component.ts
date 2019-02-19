@@ -1,5 +1,7 @@
-import { Component, PipeTransform, Pipe, OnInit, Input } from '@angular/core';
-import { DomSanitizer } from "@angular/platform-browser";
+import { Component, PipeTransform, Pipe, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { Router } from '@angular/router';
+import { Movie } from 'src/app/models/movie';
 
 @Pipe({ name: 'safe' })
 export class SafePipe implements PipeTransform {
@@ -14,13 +16,88 @@ export class SafePipe implements PipeTransform {
   templateUrl: './slick-carousel.component.html',
   styleUrls: ['./slick-carousel.component.css']
 })
-export class SlickCarouselComponent implements OnInit {
-  @Input() mediaJSON;
+export class SlickCarouselComponent implements OnInit, OnChanges {
+  @Input() listVideo;
+  @Input() titleCarousel;
+  @Input() loading;
+  imageLoading: Boolean = false;
 
-  slideConfig = {"slidesToShow": 6, "slidesToScroll": 1, "infinite": false};
+  slideConfig = {
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 7,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
-  constructor() {}
+  constructor(private router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    if (this.loading) {
+      const movie = new Movie();
+      movie.poster = '/assets/loading_image.gif';
+      for (let i = 0; i < 8; i++) {
+        this.listVideo.push(movie);
+      }
+    }
+  }
+
+  showDetailVideo(movieId: any) {
+    this.router.navigate(['/details/' + movieId]);
+  }
+
+  ngOnChanges(simpleChanges: SimpleChanges) {
+    this.imageLoading = simpleChanges.loading.currentValue;
+  }
 
 }
