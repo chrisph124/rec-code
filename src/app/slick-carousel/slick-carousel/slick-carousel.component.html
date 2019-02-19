@@ -3,15 +3,21 @@
   <ngx-slick-carousel style="padding:0.25em 3em;"
     class="carousel"
     #slickModal="slick-carousel"
-    [config]="slideConfig"
-  >
+    [config]="slideConfig" *ngIf="loading">
+    <div ngxSlickItem *ngFor="let video of mockData" class="slide">
+      <nz-card nzHoverable [nzLoading]="loading" [nzBordered]="false">
+        <nz-card-meta nzTitle="{{video.title}}"></nz-card-meta>
+      </nz-card>
+    </div>
+  </ngx-slick-carousel>
+  <ngx-slick-carousel style="padding:0.25em 3em;"
+    class="carousel"
+    #slickModal="slick-carousel"
+    [config]="slideConfig" *ngIf="!loading">
     <div ngxSlickItem *ngFor="let video of listVideo" class="slide">
-      <nz-card nzHoverable [nzCover]="coverTemplate" [nzLoading]="loading" [nzBordered]="false">
+      <nz-card nzHoverable [nzCover]="coverTemplate" [nzBordered]="false">
         <nz-card-meta nzTitle="{{video.title}}" [nzDescription]="actorTemplate"></nz-card-meta>
       </nz-card>
-      <ng-template #avatarTemplate>
-        <nz-avatar (click)="showDetailVideo(video.movieId)" nzSrc="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
-      </ng-template>
       <ng-template #coverTemplate>
         <img (click)="showDetailVideo(video.movieId)" alt="{{video.title}}" src="{{video.poster}}"/>
       </ng-template>

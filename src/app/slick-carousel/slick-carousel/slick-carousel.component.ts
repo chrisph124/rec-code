@@ -1,4 +1,4 @@
-import { Component, PipeTransform, Pipe, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, PipeTransform, Pipe, OnInit, Input, OnChanges, SimpleChanges, OnDestroy } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Movie } from 'src/app/models/movie';
@@ -16,10 +16,11 @@ export class SafePipe implements PipeTransform {
   templateUrl: './slick-carousel.component.html',
   styleUrls: ['./slick-carousel.component.css']
 })
-export class SlickCarouselComponent implements OnInit {
+export class SlickCarouselComponent implements OnInit, OnDestroy {
   @Input() listVideo;
   @Input() titleCarousel;
   @Input() loading;
+  mockData: Movie[];
 
   slideConfig = {
     slidesToShow: 8,
@@ -79,21 +80,24 @@ export class SlickCarouselComponent implements OnInit {
     ]
   };
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+  }
 
   ngOnInit() {
-    let mockData = [];
+    const mock = [];
     const movie = new Movie();
-      movie.poster = '/assets/loading_image.gif';
-      for (let i = 0; i < 8; i++) {
-        mockData.push(movie);
-      }
-    if (this.loading) {
-      this.listVideo = mockData;
+    for (let i = 0; i < 8; i++) {
+      mock.push(movie);
     }
+    this.mockData = mock;
   }
 
   showDetailVideo(movieId: any) {
     this.router.navigate(['/details/' + movieId]);
+  }
+
+  ngOnDestroy() {
+    this.listVideo = [];
+    this.loading = true;
   }
 }
