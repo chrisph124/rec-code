@@ -16,11 +16,10 @@ export class SafePipe implements PipeTransform {
   templateUrl: './slick-carousel.component.html',
   styleUrls: ['./slick-carousel.component.css']
 })
-export class SlickCarouselComponent implements OnInit, OnChanges {
+export class SlickCarouselComponent implements OnInit {
   @Input() listVideo;
   @Input() titleCarousel;
   @Input() loading;
-  imageLoading: Boolean = false;
 
   slideConfig = {
     slidesToShow: 8,
@@ -83,21 +82,18 @@ export class SlickCarouselComponent implements OnInit, OnChanges {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    if (this.loading) {
-      const movie = new Movie();
+    let mockData = [];
+    const movie = new Movie();
       movie.poster = '/assets/loading_image.gif';
       for (let i = 0; i < 8; i++) {
-        this.listVideo.push(movie);
+        mockData.push(movie);
       }
+    if (this.loading) {
+      this.listVideo = mockData;
     }
   }
 
   showDetailVideo(movieId: any) {
     this.router.navigate(['/details/' + movieId]);
   }
-
-  ngOnChanges(simpleChanges: SimpleChanges) {
-    this.imageLoading = simpleChanges.loading.currentValue;
-  }
-
 }

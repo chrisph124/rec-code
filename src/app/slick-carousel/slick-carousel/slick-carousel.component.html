@@ -6,7 +6,7 @@
     [config]="slideConfig"
   >
     <div ngxSlickItem *ngFor="let video of listVideo" class="slide">
-      <nz-card nzHoverable [nzCover]="coverTemplate" [nzLoading]="imageLoading" [nzBordered]="false">
+      <nz-card nzHoverable [nzCover]="coverTemplate" [nzLoading]="loading" [nzBordered]="false">
         <nz-card-meta nzTitle="{{video.title}}" [nzDescription]="actorTemplate"></nz-card-meta>
       </nz-card>
       <ng-template #avatarTemplate>

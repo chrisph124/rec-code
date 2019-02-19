@@ -8,7 +8,7 @@ import { Movie } from 'src/app/models/movie';
   templateUrl: './recommendation.component.html',
   styleUrls: ['./recommendation.component.css']
 })
-export class RecommendationComponent implements OnInit, OnDestroy {
+export class RecommendationComponent implements OnInit {
   mediaJSON: Movie[] = [];
   loading: Boolean = false;
 
@@ -21,10 +21,6 @@ export class RecommendationComponent implements OnInit, OnDestroy {
       this.mediaJSON = data;
       this.loading = false;
     });
-  }
-
-  ngOnDestroy() {
-    this.loading = false;
   }
 
 }
