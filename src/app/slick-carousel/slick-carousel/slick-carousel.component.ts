@@ -2,6 +2,8 @@ import { Component, PipeTransform, Pipe, OnInit, Input, OnChanges, SimpleChanges
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Movie } from 'src/app/models/movie';
+import { DataService } from 'src/app/services/data.service';
+import { Subscription } from 'rxjs';
 
 @Pipe({ name: 'safe' })
 export class SafePipe implements PipeTransform {
@@ -17,10 +19,14 @@ export class SafePipe implements PipeTransform {
   styleUrls: ['./slick-carousel.component.css']
 })
 export class SlickCarouselComponent implements OnInit, OnDestroy {
-  @Input() listVideo;
+  @Input() type;
   @Input() titleCarousel;
-  @Input() loading;
-  mockData: Movie[];
+  loading: Boolean = true;
+  mockMovie = new Movie();
+  mockData: Movie[] = [this.mockMovie, this.mockMovie, this.mockMovie, this.mockMovie
+    , this.mockMovie, this.mockMovie, this.mockMovie, this.mockMovie];
+  listVideo: Movie[];
+  private sub: Subscription;
 
   slideConfig = {
     slidesToShow: 8,
@@ -33,7 +39,7 @@ export class SlickCarouselComponent implements OnInit, OnDestroy {
           slidesToShow: 7,
           slidesToScroll: 1,
           infinite: false,
-          dots: true
+          dots: false
         }
       },
       {
@@ -42,7 +48,7 @@ export class SlickCarouselComponent implements OnInit, OnDestroy {
           slidesToShow: 6,
           slidesToScroll: 1,
           infinite: false,
-          dots: true
+          dots: false
         }
       },
       {
@@ -51,7 +57,7 @@ export class SlickCarouselComponent implements OnInit, OnDestroy {
           slidesToShow: 5,
           slidesToScroll: 1,
           infinite: false,
-          dots: true
+          dots: false
         }
       },
       {
@@ -67,29 +73,33 @@ export class SlickCarouselComponent implements OnInit, OnDestroy {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: true
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: true
         }
       }
     ]
   };
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private dataService: DataService) {
   }
 
   ngOnInit() {
-    const mock = [];
-    const movie = new Movie();
-    for (let i = 0; i < 8; i++) {
-      mock.push(movie);
+    this.loading = true;
+    if (this.type && this.type !== '') {
+      this.sub = this.dataService.getListMovies(this.type)
+      .subscribe(data => {
+        this.listVideo = data;
+        this.loading = false;
+      });
     }
-    this.mockData = mock;
   }
 
   showDetailVideo(movieId: any) {
@@ -97,6 +107,7 @@ export class SlickCarouselComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    this.sub.unsubscribe();
     this.listVideo = [];
     this.loading = true;
   }

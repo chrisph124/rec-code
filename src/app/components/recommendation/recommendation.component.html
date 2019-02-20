@@ -1,6 +1,3 @@
-<rec-slick-carousel [listVideo]="mediaJSON" [loading]="loading" titleCarousel="Trending"></rec-slick-carousel>
-<rec-slick-carousel [listVideo]="mediaJSON" [loading]="loading" titleCarousel="Recommend for you"></rec-slick-carousel>
-<rec-slick-carousel [listVideo]="mediaJSON" [loading]="loading" titleCarousel="New Release"></rec-slick-carousel>
-<rec-slick-carousel [listVideo]="mediaJSON" [loading]="loading" titleCarousel="Because you watched"></rec-slick-carousel>
-<rec-slick-carousel [listVideo]="mediaJSON" [loading]="loading" titleCarousel="People watched also watched"></rec-slick-carousel>
-<rec-slick-carousel [listVideo]="mediaJSON" [loading]="loading" titleCarousel="Because your friend watched"></rec-slick-carousel>
+<div *ngFor="let carousel of listCarousel">
+    <rec-slick-carousel [type]="carousel.type" [titleCarousel]="carousel.title"></rec-slick-carousel>
+</div>

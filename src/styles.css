@@ -17,6 +17,9 @@
   right: 50px;
   top: -20px;
 }
+.ant-card-body {
+  padding: 18px;
+}
 
 .ant-card-meta-title {
   font-size: 14px !important;
