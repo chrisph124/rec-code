@@ -1,15 +1,20 @@
-<form nz-form [nzLayout]="'inline'" [formGroup]="validateForm" (ngSubmit)="submitForm()" style="text-align: right">
+<form nz-form *ngIf="!isAuthenticated()" [nzLayout]="'inline'" [formGroup]="loginForm" (ngSubmit)="submitForm()" style="text-align: right">
   <nz-form-item>
     <nz-form-control>
       <nz-input-group [nzPrefix]="prefixUser">
-        <input formControlName="userName" nz-input placeholder="Username">
+        <input formControlName="userId" nz-input placeholder="User ID">
       </nz-input-group>
     </nz-form-control>
   </nz-form-item>
   <nz-form-item>
     <nz-form-control>
-      <button nz-button nzType="primary" [disabled]="!validateForm.valid">Log in</button>
+      <button nz-button nzType="primary" [disabled]="!loginForm.valid">Log in</button>
     </nz-form-control>
   </nz-form-item>
 </form>
 <ng-template #prefixUser><i nz-icon type="user"></i></ng-template>
+<div *ngIf="isAuthenticated()" style="text-align: right">
+  <span>Welcome {{getUserId()}},</span>
+  <button nz-button nzType="primary" class="logout-btn" (click)="logout()"><i nz-icon type="poweroff" theme="outline"></i> Logout</button>
+</div>
+

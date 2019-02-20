@@ -25,14 +25,3 @@ h3 {
 .ant-card-body {
   padding: 10px !important;
 }
-
-
-[nz-carousel-content] {
-  width: 200px !important;
-  height: 200px;
-  margin-right: 3px;
-}
-
-[nz-carousel-content]:last-child {
-  margin-right: 0;
-}

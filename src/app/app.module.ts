@@ -23,6 +23,7 @@ import { AppRoutingModule } from './routing/router.module';
 import { VideoDetailsModule } from './components/video-details/video-details.module';
 import { DataService } from './services/data.service';
 import { NotFoundComponent } from './components/page/404/not-found.component';
+import { AuthenticationService } from './services/authentication.service';
 
 registerLocaleData(en);
 
@@ -50,7 +51,8 @@ registerLocaleData(en);
     AppRoutingModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US },
-    DataService
+    DataService,
+    AuthenticationService
   ],
   bootstrap: [AppComponent]
 })

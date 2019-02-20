@@ -8,12 +8,14 @@ import { Movie } from 'src/app/models/movie';
 })
 export class MovieInfoComponent implements OnInit {
   @Input() movie: Movie;
+  rating: number;
   constructor() { }
 
   ngOnInit() {
     if (!this.movie) {
       this.movie = new Movie();
     }
+    this.rating = Math.round(Math.random() * 5);
   }
 
 }

@@ -34,6 +34,16 @@ server.get('/api/v2/recommendation/video/:id', (req, res) => {
     }
 })
 
+server.post('/api/login', (req, res) => {
+    if (req.query && Object.keys(req.query).length > 0) {
+        if (req.query.userId === "admin") {
+            res.json({status: "success"});
+        } else {
+            res.json({status: "failure"});
+        }
+    }
+})
+
 server.listen(3000, () => {
     console.log('JSON server is running');
 })

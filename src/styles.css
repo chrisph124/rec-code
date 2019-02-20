@@ -8,13 +8,13 @@
 }
 
 .slick-next {
-  right: 25px;
+  right: 50px;
   top: -20px;
 }
 
 .slick-prev {
   left: auto;
-  right: 50px;
+  right: 75px;
   top: -20px;
 }
 .ant-card-body {

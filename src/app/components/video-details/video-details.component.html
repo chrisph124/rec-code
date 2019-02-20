@@ -4,14 +4,13 @@
       <video-player sources="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4"></video-player>
     </div>
     <div nz-col nzLg="8" nzXs="24" class="related-movies">
-      <h2>Related Movies</h2>
-      <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let movieItem of relatedMovies" class="slide">
-          <movie-item [movieItem]="movieItem"></movie-item>
-        </div>
-      </ngx-slick-carousel>
+      <movie-info nz-row style="padding: 40px;" [movie]="movie"></movie-info>
     </div>
   </section>
-  <movie-info nz-row style="padding: 20px;" [movie]="movie"></movie-info>
-  <comments-and-reviews></comments-and-reviews>
+  <section nz-row>
+    <comments-and-reviews></comments-and-reviews>
+  </section>
+  <section nz-row>
+    <rec-slick-carousel type="trending" titleCarousel="Related Movies"></rec-slick-carousel>
+  </section>
 </main>

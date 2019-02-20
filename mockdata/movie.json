@@ -778,9 +778,7 @@
 				"jealousy"
 			],
 			"poster": "https://m.media-amazon.com/images/M/MV5BMTIxMzA2ODk2NV5BMl5BanBnXkFtZTcwMzQ4ODIyMQ@@._V1_.jpg"
-		}
-	],
-	"similar_movies": [
+		},
 		{
 			"movieId": "345",
 			"title": "Boxing Helena",

@@ -1,4 +1,4 @@
-<div nz-row nz-col nzSm="24" nzMd="9">
+<div nz-row nz-col nzSm="24" nzMd="24">
   <div class="left-cover" nz-col nzXs="9">
       <img [src]="movie.poster" alt="">
   </div>
@@ -9,6 +9,7 @@
       <li>Actor : <a *ngFor="let actor of movie.actor; let last = last;">{{actor}}<span *ngIf="!last">, </span></a></li>
       <li>Genre : <a *ngFor="let genre of movie.genre; let last = last;">{{genre}}<span *ngIf="!last">, </span></a></li>
       <li>Release : {{movie.datePublished }}</li>
+      <li>Rating: <nz-rate [(ngModel)]="rating" nzAllowHalf nzDisabled></nz-rate></li>
       <li>Language : English</li>
     </ul>
     <ul class="social-media">
@@ -19,7 +20,7 @@
     <button nz-button nzSize="large" nzType="danger">All Movie</button>
   </div>
 </div>
-<div nz-col nzSm="24" nzMd="15" class="description">
-  <h3 style="color: white;">Description:</h3>
-    {{movie.description}}
-</div>
+<div nz-col nzSm="24" nzMd="24" class="description">
+    <h3 style="color: white;">Description:</h3>
+      {{movie.description}}
+  </div>
