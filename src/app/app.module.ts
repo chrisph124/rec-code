@@ -9,7 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RecSlickCarouselModule } from './slick-carousel/slick-carousel.module'
+import { RecSlickCarouselModule } from './slick-carousel/slick-carousel.module';
+import { MomentModule } from 'ngx-moment';
 
 import { HeaderComponent } from './components/header/header.component';
 import { NavigationComponent } from './components/header/navigation/navigation.component';
@@ -18,8 +19,10 @@ import { LoginComponent } from './components/header/login/login.component';
 import { ContentComponent } from './components/content/content.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-import { AppRoutingModule } from './routing/router.module'
+import { AppRoutingModule } from './routing/router.module';
 import { VideoDetailsModule } from './components/video-details/video-details.module';
+import { DataService } from './services/data.service';
+import { NotFoundComponent } from './components/page/404/not-found.component';
 
 registerLocaleData(en);
 
@@ -31,20 +34,24 @@ registerLocaleData(en);
     FooterComponent,
     NavigationComponent,
     LoginComponent,
-    RecommendationComponent
+    RecommendationComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     NgZorroAntdModule,
     FormsModule,
     HttpClientModule,
+    MomentModule,
     BrowserAnimationsModule,
     VideoDetailsModule,
     ReactiveFormsModule,
     RecSlickCarouselModule,
     AppRoutingModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [{ provide: NZ_I18N, useValue: en_US },
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

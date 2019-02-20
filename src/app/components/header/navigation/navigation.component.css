@@ -16,3 +16,7 @@
 .ant-menu-horizontal>.ant-menu-item {
   border-bottom: none;
 }
+
+.ant-menu-horizontal>.ant-menu-item>a {
+  color: #fff;
+}

@@ -1,1 +1,3 @@
-<rec-slick-carousel [mediaJSON]="mediaJSON"></rec-slick-carousel>
+<div *ngFor="let carousel of listCarousel">
+    <rec-slick-carousel [type]="carousel.type" [titleCarousel]="carousel.title"></rec-slick-carousel>
+</div>

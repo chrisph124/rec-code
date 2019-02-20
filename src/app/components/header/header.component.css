@@ -5,3 +5,7 @@ nz-header {
   border-bottom: 1px solid #fff;
   background-color: #141414;
 }
+
+img {
+  height: 35px;
+}

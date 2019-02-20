@@ -1,5 +1,11 @@
 nz-footer {
   width: 100%;
   color: #fff;
-  background-color: #141414;
+  height: 90px;
+  background-color: #272525;
+  margin-top: 50px;
+}
+
+img {
+  height: 30px;
 }

@@ -1,12 +1,12 @@
 <main>
   <section class="video-player" nz-row>
     <div nz-col nzLg="16" nzXs="24">
-      <video-player [sources]="movie.sources"></video-player>
+      <video-player sources="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4"></video-player>
     </div>
     <div nz-col nzLg="8" nzXs="24" class="related-movies">
       <h2>Related Movies</h2>
       <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let movieItem of movie.relatedMovies" class="slide">
+        <div ngxSlickItem *ngFor="let movieItem of relatedMovies" class="slide">
           <movie-item [movieItem]="movieItem"></movie-item>
         </div>
       </ngx-slick-carousel>
