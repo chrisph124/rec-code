@@ -7,16 +7,62 @@
   margin: 0 -10px;
 }
 
-.slick-next {
-  right: 50px;
-  top: -20px;
+.slick-custom-prev,
+.slick-custom-next {
+  padding: 0;
+  background-color: transparent;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 40px;
+  color: transparent;
+  border: 0 none;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  top: 0;
+  outline: 0 none;
+  opacity: 1;
+  border-radius: 0;
+  transition: opacity .25s ease,background-color .25s ease, width .25s ease;
 }
 
-.slick-prev {
+.slick-custom-prev.slick-disabled,
+.slick-custom-next.slick-disabled {
+  display: none !important;
+}
+
+.slick-custom-next::before,
+.slick-custom-prev::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+
+.slick-custom-next:hover,
+.slick-custom-prev:hover {
+  background-color: rgba(0,0,0,.75);
+  width: 70px;
+}
+
+.slick-custom-next {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxOCAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTQuNzYzIDE3LjIzN3YtMi40NzRsLTE0IDE0Yy0uNjg0LjY4My0uNjg0IDEuNzkgMCAyLjQ3NC42ODMuNjg0IDEuNzkuNjg0IDIuNDc0IDBsMTQtMTRjLjY4NC0uNjgzLjY4NC0xLjc5IDAtMi40NzRsLTE0LTE0QzIuNTU0LjA4IDEuNDQ3LjA4Ljc2My43NjNjLS42ODQuNjgzLS42ODQgMS43OSAwIDIuNDc0bDE0IDE0eiIgZmlsbC1ydWxlPSJub256ZXJvIiBmaWxsPSIjRUZGMUYxIi8+PC9zdmc+") !important;
+  right: 0;
+}
+
+.slick-custom-prev {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxOCAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMy4yMzcgMTcuMjM3di0yLjQ3NGwxNCAxNGMuNjg0LjY4My42ODQgMS43OSAwIDIuNDc0LS42ODMuNjg0LTEuNzkuNjg0LTIuNDc0IDBsLTE0LTE0Yy0uNjg0LS42ODMtLjY4NC0xLjc5IDAtMi40NzRsMTQtMTRjLjY4My0uNjg0IDEuNzktLjY4NCAyLjQ3NCAwIC42ODQuNjgzLjY4NCAxLjc5IDAgMi40NzRsLTE0IDE0eiIgZmlsbC1ydWxlPSJub256ZXJvIiBmaWxsPSIjRUZGMUYxIi8+PC9zdmc+") !important;
+  left: 0;
+}
+
+/*.slick-prev {
   left: auto;
   right: 75px;
   top: -20px;
-}
+} */
 .ant-card-body {
   padding: 18px;
 }

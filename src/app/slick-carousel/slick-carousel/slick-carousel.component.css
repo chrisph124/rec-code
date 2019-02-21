@@ -1,15 +1,15 @@
 nz-layout {
   background-color: #141414;
-  padding: 0.5em 0;
+  padding: 0.5em 1em;
 }
 
 .carousel {
-  min-height: 350px;
+  min-height: 300px;
 }
 
 .ant-card {
   width: 200px;
-  height: 350px;
+  height: 300px;
 }
 
 h3 {

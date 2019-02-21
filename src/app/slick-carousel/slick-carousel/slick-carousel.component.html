@@ -15,18 +15,15 @@
     #slickModal="slick-carousel"
     [config]="slideConfig" *ngIf="!loading">
     <div ngxSlickItem *ngFor="let video of listVideo" class="slide">
-      <nz-card nzHoverable [nzCover]="coverTemplate" [nzActions]="[actionTemplate]" [nzBordered]="false">
-        <nz-card-meta nzTitle="{{video.title}}" [nzDescription]="actorTemplate"></nz-card-meta>
+      <nz-card nzHoverable [nzCover]="coverTemplate" [nzBordered]="false">
+        <nz-card-meta nzTitle="{{video.title}}"></nz-card-meta>
       </nz-card>
       <ng-template #coverTemplate>
-        <img alt="{{video.title}}" src="{{video.poster}}"/>
+        <img (click)="showDetailVideo(video.movieId)" alt="{{video.title}}" src="{{video.poster}}"/>
       </ng-template>
-      <ng-template #actorTemplate>
-        Actor: <a *ngFor="let actor of video.actor; let last = last;">{{actor}}<span *ngIf="!last">, </span></a>
-      </ng-template>
-      <ng-template #actionTemplate>
+      <!-- <ng-template #actionTemplate>
         <button (click)="showDetailVideo(video.movieId)" nz-button nzType="primary"><i nz-icon type="play-circle" theme="outline"></i> Watch movie</button>
-      </ng-template>
+      </ng-template> -->
     </div>
   </ngx-slick-carousel>
 </nz-layout>

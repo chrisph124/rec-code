@@ -32,6 +32,8 @@ export class SlickCarouselComponent implements OnInit, OnDestroy {
     slidesToShow: 8,
     slidesToScroll: 1,
     infinite: false,
+    prevArrow: '<button type="button" class="slick-custom-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slick-custom-next">Previous</button>',
     responsive: [
       {
         breakpoint: 1700,
