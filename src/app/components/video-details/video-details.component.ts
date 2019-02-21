@@ -24,9 +24,6 @@ export class VideoDetailsComponent implements OnInit, OnDestroy {
       this.dataService.getMovieById(this.movieId).subscribe(data => {
         this.movie = data;
       });
-      this.dataService.getListMovies('RelatedMovie', this.authService.userId).subscribe(data => {
-        this.relatedMovies = data;
-      });
     });
   }
 

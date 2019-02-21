@@ -22,7 +22,7 @@ export class AuthenticationService {
   }
 
   login(userId: string): Observable<Boolean> {
-    return this.http.post<Boolean>(environment.api_url + `/api/login?userId=${userId}`, null)
+    return this.http.get<Boolean>(environment.api_url + `/api/login?userId=${userId}`)
     .pipe(map(response => {
       if ((response as any).status === 'success') {
         this.setIsAuthenticated(true);

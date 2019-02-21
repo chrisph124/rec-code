@@ -19,8 +19,9 @@ export class SafePipe implements PipeTransform {
   templateUrl: './slick-carousel.component.html',
   styleUrls: ['./slick-carousel.component.css']
 })
-export class SlickCarouselComponent implements OnInit, OnDestroy {
+export class SlickCarouselComponent implements OnInit, OnDestroy, OnChanges {
   @Input() type;
+  @Input() movieId;
   @Input() titleCarousel;
   loading: Boolean = true;
   mockMovie = new Movie();
@@ -97,10 +98,28 @@ export class SlickCarouselComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.loading = true;
     if (this.type && this.type !== '') {
-      this.sub = this.dataService.getListMovies(this.type, this.authService.userId)
+      this.sub = this.dataService.getListMovies(this.type, this.authService.userId, this.movieId)
       .subscribe(data => {
-        this.listVideo = data;
-        this.loading = false;
+        if (data && data.length > 0) {
+          this.listVideo = data;
+          this.loading = false;
+        } else {
+          this.listVideo = this.mockData;
+        }
+      });
+    }
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes.movieId.currentValue) {
+      this.dataService.getListMovies(this.type, this.authService.userId, this.movieId)
+      .subscribe(data => {
+        if (data && data.length > 0) {
+          this.listVideo = data;
+          this.loading = false;
+        } else {
+          this.listVideo = this.mockData;
+        }
       });
     }
   }
