@@ -24,6 +24,7 @@ import { VideoDetailsModule } from './components/video-details/video-details.mod
 import { DataService } from './services/data.service';
 import { NotFoundComponent } from './components/page/404/not-found.component';
 import { AuthenticationService } from './services/authentication.service';
+import { ListMovieComponent } from './components/list-movie/list-movie.component';
 
 registerLocaleData(en);
 
@@ -36,7 +37,8 @@ registerLocaleData(en);
     NavigationComponent,
     LoginComponent,
     RecommendationComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ListMovieComponent
   ],
   imports: [
     BrowserModule,

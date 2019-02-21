@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Movie } from 'src/app/models/movie';
 import { DataService } from 'src/app/services/data.service';
 import { Subscription } from 'rxjs';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 
 @Pipe({ name: 'safe' })
 export class SafePipe implements PipeTransform {
@@ -90,13 +91,13 @@ export class SlickCarouselComponent implements OnInit, OnDestroy {
     ]
   };
 
-  constructor(private router: Router, private dataService: DataService) {
+  constructor(private router: Router, private dataService: DataService, private authService: AuthenticationService) {
   }
 
   ngOnInit() {
     this.loading = true;
     if (this.type && this.type !== '') {
-      this.sub = this.dataService.getListMovies(this.type)
+      this.sub = this.dataService.getListMovies(this.type, this.authService.userId)
       .subscribe(data => {
         this.listVideo = data;
         this.loading = false;

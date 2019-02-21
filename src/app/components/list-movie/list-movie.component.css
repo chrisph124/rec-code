@@ -1,0 +1,14 @@
+.ant-card {
+    width: 200px;
+    height: 300px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 16px;
+    padding: 0 40px;
+}
+
+.row-item {
+    margin-top: 20px;
+}

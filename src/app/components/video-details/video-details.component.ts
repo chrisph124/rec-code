@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { DataService } from 'src/app/services/data.service';
 import { Movie } from 'src/app/models/movie';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 
 @Component({
   selector: 'video-details',
@@ -15,7 +16,7 @@ export class VideoDetailsComponent implements OnInit, OnDestroy {
   movieId: string;
   relatedMovies: Movie[] = [];
   private sub: Subscription;
-  constructor(private route: ActivatedRoute, private dataService: DataService) { }
+  constructor(private route: ActivatedRoute, private dataService: DataService, private authService: AuthenticationService) { }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
@@ -23,7 +24,7 @@ export class VideoDetailsComponent implements OnInit, OnDestroy {
       this.dataService.getMovieById(this.movieId).subscribe(data => {
         this.movie = data;
       });
-      this.dataService.getListMovies('RelatedMovie').subscribe(data => {
+      this.dataService.getListMovies('RelatedMovie', this.authService.userId).subscribe(data => {
         this.relatedMovies = data;
       });
     });

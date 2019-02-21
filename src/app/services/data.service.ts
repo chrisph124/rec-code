@@ -12,9 +12,10 @@ export class DataService {
     constructor(private httpClient: HttpClient) {
     }
 
-    public getListMovies(type: string): Observable<Movie[]> {
+    public getListMovies(type: string, userId: string): Observable<Movie[]> {
         const body = {
-            type: type
+            type: type,
+            userId: userId
         };
         return this.httpClient.post<Movie[]>(DataService.URL + '/api/v2/recommendation', body);
     }
