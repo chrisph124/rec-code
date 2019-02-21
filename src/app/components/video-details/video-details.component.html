@@ -8,7 +8,7 @@
     </div>
   </section>
   <section nz-row>
-    <div class="tag-section">Tags: <a *ngFor="let tag of movie.tag; let last = last;">#{{tag}}<span *ngIf="!last">, </span></a></div>
+    <div class="tag-section">Tags: <a *ngFor="let tag of movie?.tag; let last = last;">#{{tag}}<span *ngIf="!last">, </span></a></div>
   </section>
   <section nz-row>
     <comments-and-reviews></comments-and-reviews>

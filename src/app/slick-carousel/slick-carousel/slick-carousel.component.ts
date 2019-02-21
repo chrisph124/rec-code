@@ -111,7 +111,7 @@ export class SlickCarouselComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes.movieId.currentValue) {
+    if (changes.movieId && changes.movieId.currentValue) {
       this.dataService.getListMovies(this.type, this.authService.userId, this.movieId)
       .subscribe(data => {
         if (data && data.length > 0) {
