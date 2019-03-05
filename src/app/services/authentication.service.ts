@@ -8,7 +8,7 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class AuthenticationService {
-  userId: string;
+  userId: string = 'anonymous';
   isAuthenticated: Boolean = false;
 
   constructor(private http: HttpClient) { }

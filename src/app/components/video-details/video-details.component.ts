@@ -4,6 +4,8 @@ import { Subscription } from 'rxjs';
 import { DataService } from 'src/app/services/data.service';
 import { Movie } from 'src/app/models/movie';
 import { AuthenticationService } from 'src/app/services/authentication.service';
+import { GroupMovie } from 'src/app/models/groupMovie';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'video-details',
@@ -14,20 +16,28 @@ export class VideoDetailsComponent implements OnInit, OnDestroy {
   movie: Movie;
   slideConfig = {slidesToShow: 2, slidesToScroll: 1, infinite: true};
   movieId: string;
-  relatedMovies: Movie[] = [];
+  relatedMovie: GroupMovie = new GroupMovie();
   private sub: Subscription;
+  private subMovie: Subscription;
+  private subRelatedMovie: Subscription;
   constructor(private route: ActivatedRoute, private dataService: DataService, private authService: AuthenticationService) { }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.movieId = params['id'];
-      this.dataService.getMovieById(this.movieId).subscribe(data => {
+      this.subMovie = this.dataService.getMovieById(this.movieId).subscribe(data => {
         this.movie = data;
+      });
+      this.subRelatedMovie = this.dataService.getListMovies('similarity', this.authService.userId, this.movieId)
+      .subscribe(data => {
+        this.relatedMovie = data[0];
       });
     });
   }
 
   ngOnDestroy() {
+    this.subMovie.unsubscribe();
+    this.subRelatedMovie.unsubscribe();
     this.sub.unsubscribe();
   }
 

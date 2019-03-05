@@ -20,22 +20,19 @@ export class SafePipe implements PipeTransform {
   styleUrls: ['./slick-carousel.component.css']
 })
 export class SlickCarouselComponent implements OnInit, OnDestroy, OnChanges {
-  @Input() type;
-  @Input() movieId;
   @Input() titleCarousel;
   loading: Boolean = true;
   mockMovie = new Movie();
   mockData: Movie[] = [this.mockMovie, this.mockMovie, this.mockMovie, this.mockMovie
     , this.mockMovie, this.mockMovie, this.mockMovie, this.mockMovie];
-  listVideo: Movie[];
+  @Input() listVideo: Movie[];
   private sub: Subscription;
 
   slideConfig = {
     slidesToShow: 8,
     slidesToScroll: 1,
-    infinite: false,
     prevArrow: '<button type="button" class="slick-custom-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slick-custom-next">Previous</button>',
+    nextArrow: '<button type="button" class="slick-custom-next">Next</button>',
     responsive: [
       {
         breakpoint: 1700,
@@ -96,31 +93,15 @@ export class SlickCarouselComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   ngOnInit() {
-    this.loading = true;
-    if (this.type && this.type !== '') {
-      this.sub = this.dataService.getListMovies(this.type, this.authService.userId, this.movieId)
-      .subscribe(data => {
-        if (data && data.length > 0) {
-          this.listVideo = data;
-          this.loading = false;
-        } else {
-          this.listVideo = this.mockData;
-        }
-      });
-    }
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes.movieId && changes.movieId.currentValue) {
-      this.dataService.getListMovies(this.type, this.authService.userId, this.movieId)
-      .subscribe(data => {
-        if (data && data.length > 0) {
-          this.listVideo = data;
-          this.loading = false;
-        } else {
-          this.listVideo = this.mockData;
-        }
-      });
+    if (changes.listVideo.currentValue && changes.listVideo.currentValue.length > 0) {
+      this.loading = false;
+      this.listVideo = changes.listVideo.currentValue;
+    } else {
+      this.loading = true;
+      this.listVideo = this.mockData;
     }
   }
 
@@ -129,7 +110,6 @@ export class SlickCarouselComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   ngOnDestroy() {
-    this.sub.unsubscribe();
     this.listVideo = [];
     this.loading = true;
   }

@@ -7,6 +7,10 @@
   margin: 0 -10px;
 }
 
+.slick-track {
+  margin-left: 0;
+}
+
 .slick-custom-prev,
 .slick-custom-next {
   padding: 0;

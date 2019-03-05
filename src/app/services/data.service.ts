@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Observable } from 'rxjs';
 import { Movie } from '../models/movie';
+import { GroupMovie } from '../models/groupMovie';
 
 
 @Injectable()
@@ -12,25 +13,15 @@ export class DataService {
     constructor(private httpClient: HttpClient) {
     }
 
-    public getListMovies(type: string, userId: string, movieId: string): Observable<Movie[]> {
+    public getListMovies(groupName: string, userId: string, movieId: string): Observable<GroupMovie[]> {
         let body = {
-            type: type,
-            userId: userId,
-            movieId: movieId
-        };
-        if (type === 'trending') {
-             delete body.userId;
-             delete body.movieId;
-        }
-
-        if (type === 'similarity') {
-            delete body.userId;
-        }
-
-        if (type === 'lastaction') {
-            delete body.movieId;
-        }
-        return this.httpClient.post<Movie[]>(DataService.URL + '/api/v2/recommendation', body);
+            "userId": userId,
+            "groupName": groupName 
+         };
+         if (movieId) {
+             body = Object.assign({itemId: movieId}, body);
+         }
+        return this.httpClient.post<GroupMovie[]>(DataService.URL + '/api/v3/recommendation', body);
     }
 
 
