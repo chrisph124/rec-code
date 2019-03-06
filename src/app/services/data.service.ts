@@ -26,6 +26,6 @@ export class DataService {
 
 
     public getMovieById(movieId: string): Observable<Movie> {
-        return this.httpClient.get<Movie>(DataService.URL + '/api/movie?movieId=' + movieId);
+        return this.httpClient.get<Movie>(DataService.URL + '/api/item?itemId=' + movieId);
     }
 }

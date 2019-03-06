@@ -19,7 +19,7 @@
         <nz-card-meta nzTitle="{{video?.title}}"></nz-card-meta>
       </nz-card>
       <ng-template #coverTemplate>
-        <img (click)="showDetailVideo(video.movieId)" alt="{{video?.title}}" src="{{video?.poster}}"/>
+        <img (click)="showDetailVideo(video.itemId)" alt="{{video?.title}}" src="{{video?.poster}}"/>
       </ng-template>
       <!-- <ng-template #actionTemplate>
         <button (click)="showDetailVideo(video.movieId)" nz-button nzType="primary"><i nz-icon type="play-circle" theme="outline"></i> Watch movie</button>

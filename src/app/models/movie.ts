@@ -1,5 +1,5 @@
 export class Movie {
-    movieId: string;
+    itemId: string;
     title: string;
     poster: string;
     contentRating: string;
