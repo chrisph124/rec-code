@@ -14,7 +14,7 @@ export class RecommendationComponent implements OnInit, OnDestroy {
   constructor(private dataService: DataService, private authService: AuthenticationService) { }
 
   ngOnInit() {
-    this.sub = this.dataService.getListMovies('home', this.authService.userId, null)
+    this.sub = this.dataService.getListMovies('user_action', this.authService.userId, null)
       .subscribe(data => {
         if (data && data.length > 0) {
           this.listCarousel = data;

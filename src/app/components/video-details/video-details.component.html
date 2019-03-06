@@ -14,6 +14,8 @@
     <comments-and-reviews></comments-and-reviews>
   </section>
   <section nz-row>
-    <rec-slick-carousel [listVideo]="relatedMovie.item" titleCarousel="Related Movies"></rec-slick-carousel>
+    <div *ngFor="let carousel of relatedMovies">
+        <rec-slick-carousel [listVideo]="carousel.item" [titleCarousel]="carousel.title"></rec-slick-carousel>
+    </div>
   </section>
 </main>

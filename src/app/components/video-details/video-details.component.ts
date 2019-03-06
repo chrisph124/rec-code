@@ -16,7 +16,7 @@ export class VideoDetailsComponent implements OnInit, OnDestroy {
   movie: Movie;
   slideConfig = {slidesToShow: 2, slidesToScroll: 1, infinite: true};
   movieId: string;
-  relatedMovie: GroupMovie = new GroupMovie();
+  relatedMovies: GroupMovie[] = [];
   private sub: Subscription;
   private subMovie: Subscription;
   private subRelatedMovie: Subscription;
@@ -30,7 +30,7 @@ export class VideoDetailsComponent implements OnInit, OnDestroy {
       });
       this.subRelatedMovie = this.dataService.getListMovies('similarity', this.authService.userId, this.movieId)
       .subscribe(data => {
-        this.relatedMovie = data[0];
+        this.relatedMovies = data;
       });
     });
   }
